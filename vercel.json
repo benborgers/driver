@@ -1,0 +1,8 @@
+{
+    "rewrites": [{ "source": "/(.*)", "destination": "/api/$1" }],
+    "headers": [{
+        "source": "/(.*)",
+        "headers": [{ "key": "access-control-allow-origin", "value": "*" }]
+    }],
+    "github": { "silent": true }
+}
