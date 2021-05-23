@@ -7,7 +7,7 @@ Your document should be shared with public viewing enabled for these to work.
 ## Doc
 
 ```
-GET /doc?id={documentId}
+GET https://driver-api.vercel.app/doc?id={documentId}
 ```
 
 Returns Google's data on a specific Google Doc.
