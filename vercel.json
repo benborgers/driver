@@ -1,9 +1,15 @@
 {
     "rewrites": [{ "source": "/(.*)", "destination": "/api/$1" }],
-    "headers": [{
-        "source": "/(.*)",
-        "headers": [{ "key": "access-control-allow-origin", "value": "*" }]
-    }],
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [{ "key": "access-control-allow-origin", "value": "*" }]
+        },
+        {
+            "source": "/(.*)",
+            "headers": [{ "key": "cache-control", "value": "s-maxage=5" }]
+        }
+    ],
     "redirects": [{ "source": "/", "destination": "https://github.com/benborgers/driver" }],
     "github": { "silent": true }
 }
