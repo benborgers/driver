@@ -4,6 +4,6 @@
         "source": "/(.*)",
         "headers": [{ "key": "access-control-allow-origin", "value": "*" }]
     }],
-    "redirects": [{ "source": "/", "destination": "https://github.com/benborgers/driver" }]
+    "redirects": [{ "source": "/", "destination": "https://github.com/benborgers/driver" }],
     "github": { "silent": true }
 }
